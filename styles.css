@@ -1,0 +1,65 @@
+/* header style*/
+h3{
+    color: purple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px
+}
+
+/*text style*/
+p{
+    padding: 10px;
+}
+
+/*navbar style*/
+.navbar-light{
+    background-color: lavender;
+    color: white;
+}
+
+.navbar-expand-lg {background-color: lavender;
+    color: white;
+
+}
+
+.navbar{
+    background-color: lavender;
+    color: white;
+}
+
+.navbar-brand{
+    background-color: lavender;
+    color: white;
+}
+
+.dropdown-menu{
+    background-color: lavender;
+}
+
+/*adjust for smaller screensize*/
+@media(max-width:767px){
+    .navbar{
+        padding:inherit;
+        background-color: lightslategray;
+        color: white;
+
+    }
+
+    .navbar-brand{
+        background-color: lightslategray;
+        color: white;
+
+    }
+    .navbar-light{
+        background-color: lightslategray;
+        color: white;
+    }
+
+    .navbar-collapse{
+        background-color: lightslategray;
+        color: white;
+    }
+
+    .dropdown-menu{
+        background: lightslategray;
+    }
+}

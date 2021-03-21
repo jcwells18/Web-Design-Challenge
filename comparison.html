@@ -2,7 +2,7 @@
 <html lang="eng">
     <head>
     <meta charset="UTF-8">
-    <title>Max Temperature</title>
+    <title>Comparison</title>
     <!-- Bootstrap stylesheet-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -20,10 +20,10 @@
             </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots
                 </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="temperature.html">Max Temperature</a>
                     <a class="dropdown-item" href="humidity.html">Humidity</a>
                     <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
@@ -39,44 +39,34 @@
         </div>
         </div>
     </nav>
-<!--Max Temperature page-->
+<!--containers, rows, columns and images-->
 <div class="container content">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="col-md-12">
-                <h3>Max Temperature</h3>
-                <hr>
-                <div class="thumbnail">
-                    <img class="img thumbnail float-left" src='Resources/assets/images/Fig1.png' width="100%" alt="temperature">
-                </div>
-                <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earther at the time of the year this data was gathered.</p>
+            <h3>Comparison: Latitude vs. X</h3>
+            <hr>
+            <p>Click any plot to get indepth analysis.</p>
+            <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Max Temperature</h3>
+                <a href="temperature.html"><img width="100%" src="Resources/assets/images/Fig1.png"></a>
             </div>
-        <div class="col-md-4">
-            <div class="col-md-12">
-                <h3>Visualizations</h3>
-                <hr>
-                <div class=row>
-                    <div class="col-3 col-md-6">
-                        <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" width="100%" alt="temperature">
-                        </a>
-                    </div>
-                    <div class="col-3 col-md-6">
-                    <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity">
-                    </a>
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%" alt="cloudiness">
-                        </a>
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" width="100%" alt="windspeed">
-                        </a>
-                    </div>
-                </div>
+            <div class="col-md-6">
+                <h3 class="text-center">vs. Humidity</h3>
+                <a href="humidity.html"><img width="100%" src="Resources/assets/images/Fig2.png"></a>
             </div>
-        </div>
-        </div>
-    </div>
-</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-center">vs. Cloudiness</h3>
+                    <a href="cloudiness.html"><img width="100%" src="Resources/assets/images/Fig3.png"></a>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center">vs. Wind Speed</h3>
+                    <a href="windspeed.html"><img width="100%" src="Resources/assets/images/Fig4.png"></a>
+                </div>
+                </div>
+            
+            </div>
+   
 </body>
 </html>
